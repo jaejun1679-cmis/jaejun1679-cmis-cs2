@@ -1,0 +1,10 @@
+In this class, I used (so far): 
+git clone;
+git add;
+git commit;
+git push;
+ls;
+cd;
+mkdir; 
+rmdir;
+
