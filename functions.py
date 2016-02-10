@@ -34,6 +34,14 @@ def avy_volume(a, b):
 avy_volume(10 ,20)
 
 def area_tri(a, b, c):
-   h = math.sqrt((1**2) + (2**2))
+    h = math.sqrt((1**2) + (2**2))
     return (2*0.5*h)
+area_tri(1, 2, 2.5)
+
+def right_align("a")
+    
+
+
+
+
 
