@@ -24,24 +24,32 @@ def circle_area(a):
 circle_area(5)
 
 def sphere_volume(a):
-    return (4*math.pi*(a**2))
+	b = float(4/3)
+    return ((b)*math.pi*(a**3))
 sphere_volume(5)
 
-def avy_volume(a, b):
-    a/2
-    b/2
-    return ((4*math.pi*(a**2)) + (4*math.pi*(b**2)))/2
-avy_volume(10 ,20)
+def avg_volume(a, b):
+    c = float(a/2)
+    d = float(b/2)
+	z = float(4/3)
+    return (((z)*math.pi*(c**3)) + ((z)*math.pi*(d**3)))/2
+avg_volume(10 ,20)
 
 def area_tri(a, b, c):
-    h = math.sqrt((1**2) + (2**2))
-    return (2*0.5*h)
+	s = (a + b + c)
+    return math.sprt(s(s-a)(s-b)(s-c))
 area_tri(1, 2, 2.5)
 
-def right_align("a")
-    
+def right_align(a):
+    a = str(a)
+    '{:>80}'.format('a')
+right_align("Hello World!")
 
+def center(a):
+    a = str(a)
+    '{:>40}'.format('a')
+center("Hello World")
 
-
-
-
+def msg_box(a):
+	a = str(a)
+	
