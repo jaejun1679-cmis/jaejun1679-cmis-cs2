@@ -41,9 +41,8 @@ def area_tri(a, b, c):
 area_tri(1, 2, 2.5)
 
 def right_align(a):
-    a = str(a)
-    '{:>80}'.format('a')
-right_align("Hello World!")
+    print (" "*80+a)
+
 
 def center(a):
     a = str(a)
