@@ -1,7 +1,7 @@
-import math
-def add(a, b):
-	return (a+b)
-add(3, 4) 
+import math #imported the module so that math functions can be executed 
+def add(a, b): #defined a function
+	return (a+b) #told what the value the function should return; hence the name
+add(3, 4) #called the function
 
 def sub(a, b):
 	return (a-b)
@@ -24,31 +24,23 @@ def circle_area(a):
 circle_area(5)
 
 def sphere_volume(a):
-	b = float(4/3)
+    b = float(4/3)
     return ((b)*math.pi*(a**3))
 sphere_volume(5)
 
 def avg_volume(a, b):
     c = float(a/2)
     d = float(b/2)
-	z = float(4/3)
+    z = float(4/3)
     return (((z)*math.pi*(c**3)) + ((z)*math.pi*(d**3)))/2
 avg_volume(10 ,20)
 
 def area_tri(a, b, c):
-	s = (a + b + c)
-    return math.sprt(s(s-a)(s-b)(s-c))
-area_tri(1, 2, 2.5)
+    s = (a + b + c)/2
+    return math.sqrt(s(s-a)(s-b)(s-c))
+print area_tri(1, 2, 2.5)
 
 def right_align(a):
-    print (" "*80+a)
+    print (" "*80 - len(a))
 
 
-def center(a):
-    a = str(a)
-    '{:>40}'.format('a')
-center("Hello World")
-
-def msg_box(a):
-	a = str(a)
-	
