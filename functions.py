@@ -3,7 +3,7 @@ def add(a, b): #defined a function
 	return (a+b) #told what the value the function should return; hence the name
 add(3, 4) #called the function
 
-def sub(a, b):
+def sub(a, b): 
 	return (a-b)
 sub(5, 3)
 
@@ -37,10 +37,13 @@ avg_volume(10 ,20)
 
 def area_tri(a, b, c):
     s = (a + b + c)/2
-    return math.sqrt(s(s-a)(s-b)(s-c))
-print area_tri(1, 2, 2.5)
+    return float(math.sqrt((s(s-a)(s-b)(s-c))))
 
 def right_align(a):
     print (" "*80 - len(a))
+
+def msg_box(txt):
+	    return "+" + ((len(txt)+4)*"-") + "+" + "\n" + "|" + (2*" ") + (txt)+ (2*" ") + "|" + "\n" + "+" + ((len(txt)+4)*"-") + "+"
+
 
 
