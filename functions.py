@@ -36,23 +36,16 @@ def avg_volume(a, b):
     return (((z)*math.pi*(c**3)) + ((z)*math.pi*(d**3)))/2
 avgV = avg_volume(10 ,20)
 
-def area_tri(a, b, c):
-	
+def area_tri(a, b, c):	
     s = (a + b + c)/2
-    return float(math.sqrt((s(s-a)(s-b)(s-c))))
+    return float(math.sqrt((s*(s-a)*(s-b)*(s-c))))
 triA = area_tri(1, 2, 2.5)
 
 def right_align(a):
-	b = str (a)
-	print ((" "*80) - len((b)))
+	print ((" "*80) - str(len((a)))
 rightal = right_align("Hello World!")
 
 def msg_box(txt):
 	str (a)
 	return "+" + ((len(txt)+4)*"-") + "+" + "\n" + "|" + (2*" ") + (txt)+ (2*" ") + "|" + "\n" + "+" + ((len(txt)+4)*"-") + "+"
-msg_box = msg_box("I eat cats!") 
-
-
-
-
-
+msg_box = msg_box("I eat cats!")
