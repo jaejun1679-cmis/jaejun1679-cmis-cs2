@@ -33,16 +33,16 @@ def circle_area(a):
 cA = circle_area(5)
 print  msg_box(str(cA))
 
-def sphere_volume(a):
-    b = float(4/3)
-    return ((b)*math.pi*(a**3))
+def sphere_volume(a): #fix calculations
+    b = float(4)/3
+    return b*math.pi*a**3
 sV = sphere_volume(5)
 print  msg_box(str(sV))
 
 def avg_volume(a, b):
-    c = float(a/2)
-    d = float(b/2)
-    z = float(4/3)
+    c = float(a)/2
+    d = float(b)/2
+    z = float(4)/3
     return (((z)*math.pi*(c**3)) + ((z)*math.pi*(d**3)))/2
 avgV = avg_volume(10 ,20)
 print  msg_box(str(avgV))
