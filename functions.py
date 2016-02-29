@@ -19,7 +19,7 @@ multi = mul(4, 4)
 print  msg_box(str(multi))
 
 def div(a, b):
-	return (a/b)
+	return float(a)/b
 divid = div(2, 3)
 print  msg_box(str(divid))
 
@@ -62,3 +62,5 @@ def center_txt(a):
 	return (40 - len(a)) * " " + a
 centertxt = center_txt("Hello World!")
 print  msg_box(str(centertxt))
+
+output = "Here are some pretty cool numbers. I don't even know why but here they are: " + str(added) + str(subbed) + str(multi) + str(divid) + ". Thats right. " + str(added) + "is a cool number. " + str(subbed) + "That number. is pretty cool too. Ever wondered how many seconds are in a day? Well there are" + str(hts) + "hours and in seconds that would be 86400. If there was a circle, a random circle, and it had a radius of 5 units, the area would be" + str(cA) + ". Now think if another randomized sphere. For no apparent reason, it also should have a radius of 5 units. The volume now would be " + str(sV) + ". If you had two sphere now with the radii of 10 and 20 units, the average of their volumes would be " + str(avgV) + ".   
