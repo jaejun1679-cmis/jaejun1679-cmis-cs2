@@ -34,16 +34,12 @@ cA = circle_area(5)
 print  msg_box(str(cA))
 
 def sphere_volume(a): #fix calculations
-    b = float(4)/3
-    return b*math.pi*a**3
+    return (float(4)/3)*math.pi*a**3
 sV = sphere_volume(5)
 print  msg_box(str(sV))
 
-def avg_volume(a, b):
-    c = float(a)/2
-    d = float(b)/2
-    z = float(4)/3
-    return (((z)*math.pi*(c**3)) + ((z)*math.pi*(d**3)))/2
+def avg_volume(a, b):    
+    return (sphere_volume(a/2) + sphere_volume(b/2))/2
 avgV = avg_volume(10 ,20)
 print  msg_box(str(avgV))
 
@@ -63,4 +59,6 @@ def center_txt(a):
 centertxt = center_txt("Hello World!")
 print  msg_box(str(centertxt))
 
-output = "Here are some pretty cool numbers. I don't even know why but here they are: " + str(added) + str(subbed) + str(multi) + str(divid) + ". Thats right. " + str(added) + "is a cool number. " + str(subbed) + "That number. is pretty cool too. Ever wondered how many seconds are in a day? Well there are" + str(hts) + "hours and in seconds that would be 86400. If there was a circle, a random circle, and it had a radius of 5 units, the area would be" + str(cA) + ". Now think if another randomized sphere. For no apparent reason, it also should have a radius of 5 units. The volume now would be " + str(sV) + ". If you had two sphere now with the radii of 10 and 20 units, the average of their volumes would be " + str(avgV) + ".   
+output = "Here are some pretty cool numbers. I don't even know why but here they are: " + str(added) + str(subbed) + str(multi) + str(divid) + ". Thats right. " + str(added) + "is a cool number. " + str(subbed) + "That number. is pretty cool too. Ever wondered how many seconds are in a day? Well there are" + str(hts) + "hours and in seconds that would be 86400. If there was a circle, a random circle, and it had a radius of 5 units, the area would be" + str(cA) + ". Now think if another randomized sphere. For no apparent reason, it also should have a radius of 5 units. The volume now would be " + str(sV) + ". If you had two sphere now with the radii of 10 and 20 units, the average of their volumes would be " + str(avgV) + ". Now, think of a triangle with three sides which are 1, 2, and 2.5 units long, its area of the triangle will be " + str(triA) + " units. This is due to Heron's Law!" 
+
+print msg_box(output)
