@@ -5,7 +5,7 @@
 #ex: x = 5
 
 #2 3pts) Write a technical definition for 'function'
-#A function is a defined set of sequence of statements that performs a computation.
+#A function is a defined set of sequences which consists of statements that performs a computation.
 #Think of a function like a vending machine. 
 #Some input goes in (the coins), buttons are pressed (computation), and then the drink or food comes out (output). 
 
