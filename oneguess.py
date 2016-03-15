@@ -12,14 +12,14 @@ def result(target, guessnum, offby):
         print """
 The target was {}.
 Your guess was {}.
-That is over {} units.
+That is under {} units.
 """.format(target, guessnum, offby)
 
     elif target == guessnum:
         print """
 The target was {}.
 Your guess was {}. 
-Therefore you are CORRECTIO! ARE U A WIZARD?
+Therefore you are CORRECT! ARE U A WIZARD?!
 """.format(target, guessnum, offby)
 
     else:
