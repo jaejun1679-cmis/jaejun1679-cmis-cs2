@@ -59,41 +59,34 @@ def eatbreakfast():
         print """ Okay now. I'm done with you incapacities to type "yes" or "no". You GPA must be below 2.5. bye. \n"""
         exit()
 
-def wearsuit():
+def wearsuit(trynum):
 
-    answer4 = raw_input("As all classy meny and bussiness workers, they must (men and women; I'm not sexist) wear suits (or maybe that's just some social schema one must conform to). At hand, YOU know Bob works in an office and he is getting ready for work. So now u tell me, SHOULD he wear a suit? Hint: The answer is yes. (yes or no) ")
-    
-    if  answe4 == "yes":
-        print " NICE. At least you know how business men dress to work. Now Bob is wearing a suit and tie~ \n"
-    
-    elif answer4 == "no":
-        print """...................okay im getting tired. lets finish this quick.\n"""
-        wearsuit()
+    answer4 = raw_input("All if not most classy men and bussiness workers, they must (men and women; I'm not sexist) wear suits (or maybe that's just some social schema one must conform to). At hand, YOU know Bob works in an office and he is getting ready for work. So now u tell me, SHOULD he wear a suit? Hint: The answer is yes. (yes or no)\n")
 
-    else: 
+    if answer4 == "yes":
+        print "NICE. At least you know how business men dress to work. Now Bob is wearing a suit and tie~\n"
+
+    if trynum == 1:
+        print "TRY AGAIN YOU RETARD\n"
+
+    if trynum == 2:
+        print "yoyoyoyoyo\n"
+
+    if trynum == 3:
         print """
+Here. Please read about Hitler talking about youth. 
+
 My German Youth, after a year's time, I can now greet you here again!
 
-Since then, enormous events have taken place in Germany. Already twelve months ago, the battle for power has granted us success. In the meantime, our movement-of which you are the young guards today and future bearers-has taken hold of one position after another in our country and bestowed it to the German people. At the same time, your movement has grown from an already large union to the largest youth organization in the world. This is the result of numerous contributors whose leader I assigned to you, party comrade, Mr. Schirach.In this vast arena here today, you are a part of what people stand for in this country. You must now take on and learn in your youth what we want to see take shape in all of Germany. We know that nothing is handed to a people but everything must be fought for and conquered. There is nothing one can be a master of that one has not first learned and instilled into oneself. And so now, we want that you, German boys and German girls, take up all that we have hope for in you and our country-what we want to see fulfilled in Germany. We want to be ONE nation, and you my youth, you shall now become this nation. We do not want to see class and status differences anymore, and so you must not allow yourselves to nurture attitudes that promote them. We want to see ONE Reich, and you must already now train yourselves for this in ONE organization. We want our folk to be loyal, and you must learn this loyalty. We want our people to be obedient, and you must practice obedience. We want our folk to be peace loving, but also brave. You must always be ready for peace and at the same time courageous. We do not want our people to be weaklings but that they can be tough in order to withstand the difficulties of life. And you must already train yourselves for this in your youth. We want our people to love honor again, und you must declare yourselves to the principle of honor already in your youngest years. We want you to be a proud people again, and in your youth you must attain this pride; a proud people from which springs the pride of your youth and carries into the generations to come. All that we demand from the Germany of the future, we demand from you, boys and girls. This you must practice and in this contribute to the future. No matter what we create today and what we do, we will pass on one day. But in you Germany will continue. And when there will be nothing left of us, then you must bear the flag in your hand-a flag which we once raised from nothing. You must therefore stand confident on the soil of your country, and you must be strong so that this flag will never be taken from you. And then, when generation after generation comes after you, you will have the right to demand the same from them. Then you can demand from your future youth that they be like you were. And then Germany looks at you also with pride, and everyone's heart runs over with joy when we see you. And when we see in you the promise that our work is not in vain, but that it bears fruit in our country, then we are all gripped with a proud happiness to see in you the fulfillment of our work. With that we have the assurance that the Millions who died in WWI-the great numbers of our comrades-have not made the sacrifice for Germany in vain, so that in the end, out from all of it, a one-spirited, free, proud, and honor-loving people will emerge. And I know it cannot be any other way because you are flesh from our flesh and blood from our blood, and in your young minds burns the same spirit that dominates us. You cannot be any other way but be bound to us. And when the large processions of our movement march today gloriously through Germany, then we know that you will join these columns, and we know that before us lays Germany, in us marches Germany, and after us comes Germany!" - Hitler, Sept 8, 1934. 
+Since then, enormous events have taken place in Germany. Already twelve months ago, the battle for power has granted us success. In the meantime, our movement-of which you are the young guards today and future bearers-has taken hold of one position after another in our country and bestowed it to the German people. At the same time, your movement has grown from an already large union to the largest youth organization in the world. This is the result of numerous contributors whose leader I assigned to you, party comrade, Mr. Schirach.In this vast arena here today, you are a part of what people stand for in this country. You must now take on and learn in your youth what we want to see take shape in all of Germany. We know that nothing is handed to a people but everything must be fought for and conquered. There is nothing one can be a master of that one has not first learned and instilled into oneself. And so now, we want that you, German boys and German girls, take up all that we have hope for in you and our country-what we want to see fulfilled in Germany. We want to be ONE nation, and you my youth, you shall now become this nation. We do not want to see class and status differences anymore, and so you must not allow yourselves to nurture attitudes that promote them. We want to see ONE Reich, and you must already now train yourselves for this in ONE organization. We want our folk to be loyal, and you must learn this loyalty. We want our people to be obedient, and you must practice obedience. We want our folk to be peace loving, but also brave. You must always be ready for peace and at the same time courageous. We do not want our people to be weaklings but that they can be tough in order to withstand the difficulties of life. And you must already train yourselves for this in your youth. We want our people to love honor again, und you must declare yourselves to the principle of honor already in your youngest years. We want you to be a proud people again, and in your youth you must attain this pride; a proud people from which springs the pride of your youth and carries into the generations to come. All that we demand from the Germany of the future, we demand from you, boys and girls. This you must practice and in this contribute to the future. No matter what we create today and what we do, we will pass on one day. But in you Germany will continue. And when there will be nothing left of us, then you must bear the flag in your hand-a flag which we once raised from nothing. You must therefore stand confident on the soil of your country, and you must be strong so that this flag will never be taken from you. And then, when generation after generation comes after you, you will have the right to demand the same from them. Then you can demand from your future youth that they be like you were. And then Germany looks at you also with pride, and everyone's heart runs over with joy when we see you. And when we see in you the promise that our work is not in vain, but that it bears fruit in our country, then we are all gripped with a proud happiness to see in you the fulfillment of our work. With that we have the assurance that the Millions who died in WWI-the great numbers of our comrades-have not made the sacrifice for Germany in vain, so that in the end, out from all of it, a one-spirited, free, proud, and honor-loving people will emerge. And I know it cannot be any other way because you are flesh from our flesh and blood from our blood, and in your young minds burns the same spirit that dominates us. You cannot be any other way but be bound to us. And when the large processions of our movement march today gloriously through Germany, then we know that you will join these columns, and we know that before us lays Germany, in us marches Germany, and after us comes Germany!" - Adolf Hitler, Sept 8, 1934. 
 
 In short, Hitler is talking about the young mind of Germany. Now the fact that you cannot type "yes" or "no" is like...sigh nvm. From now on I will talk in some form on English you will understand. \n"""
         altcarstart()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    elif answer4 == "no":
+        print """...................okay im getting tired. lets finish this quick. like i said, he must wear a suit to work. RUN THE CODE AGAIN.\n"""
+        trynum = trynum + 1
+        wearsuit(trynum)
 
 def altercarstart():
 
@@ -112,6 +105,6 @@ def altercarstart():
 
 
 def main():
-    intro()
+    wearsuit(0)
     
 main()
