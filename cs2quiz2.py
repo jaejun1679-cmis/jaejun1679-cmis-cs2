@@ -45,7 +45,7 @@
 #the directions.
 #Be sure to use the program structure you've learned (main function, processing function, output function)
 
-def output(num1, num2, num3):
+def output(num1, num2, num3): #printing only if the numbers meet the given boolean expressions
     if num1 > num2 and num1 > num3:
         print """
 The greatest number is {}
@@ -67,10 +67,10 @@ You did not follow directions.
 """
 
 def main():
-    print "Please type in three different numbers."
-    num1 = float(raw_input("Number 1: "))
+    print "Please type in three different numbers." #simple directions givens
+    num1 = float(raw_input("Number 1: ")) #raw input of user's desired numbers.
     num2 = float(raw_input("Number 2: "))
     num3 = float(raw_input("Number 3: "))
     output(num1, num2, num3)
 
-main()
+main() #main function to execute my script
