@@ -14,35 +14,61 @@ Before you begin, take account this quote:
 "Choose is to make a choice, and a choice is to choose" - JJC
 Made no sense but thy shall not judge the ones who try. 
 """
+	raw_input("Press enter to begin. \n")
+
+def counttoten():
+    time.sleep(1)
+    print 1
+    time.sleep(1)
+    print 2 
+    time.sleep(1)
+    print 3
+    time.sleep(1)
+    print 4 
+    time.sleep(1)
+    print 5 
+    time.sleep(1)
+    print 6
+    time.sleep(1)
+    print 7 
+    time.sleep(1)
+    print 8
+    time.sleep(1)
+    print 9
+    time.sleep(1)
+    print 10 
 
 def wakeup():
 
     answer1 = raw_input("Bob needs to go to work, but should he wake up? (yes or no) ")
     
     if  answer1 == "yes":
-        print "Ugh I hate to admit it, but yes. Bob must wake up so that he can go to work.\n"
-    
+        print "\nUgh I hate to admit it, but yes. Bob must wake up so that he can go to work.\n"
+        time.sleep(2)
+
     elif answer1 == "no":
         print "IKR. People should never wake up form their eternal slumber. But come on mate, Bob needs to go to work.\n"
         exit()
 
     else: 
         print """It clearly says to type "yes" or "no" you retard...\n"""
-        wakeupscene()
+        time.sleep(2)
+        wakeup()
 
 def takeshower():
 
-    answer2 = raw_input("Tadaaa now Bob woke up. But Bob is very bad smell. Should Bob take a shower? (yes or no) ")
+    answer2 = raw_input("Tadaaa now Bob woke up. But Bob smells very very bad. Should Bob take a shower? (yes or no) ")
     
     if  answer2 == "yes":
-        print "NICE. Taking a shower is always great. You get to wash thyself whilst singing or rapping your most beloved song. And by the end of your rock concert, you are very clean.\n"
+        print "\nNICE. Taking a shower is always great. You get to wash thyself whilst singing or rapping your most beloved song. And by the end of your rock concert, you are very clean.\n"
     
     elif answer2 == "no":
-        print """Alright you dirty person, listen up. He is stinky. I just said that "Bob is very bad smell." *translating into retard-understandable-language...* (insert mandarin here)  Hm ironnic. But seriously he needs to take a shower you swine-like being.\n""" #come and fix the fill in the blank of mandarin
+        print """Alright you dirty person, listen up. He is stinky. I just said that "Bob is very bad smell." *translating into retard-understandable-language...* (insert mandarin here)  Hm ironic. But seriously he needs to take a shower you swine-like being.\n"""
         exit()
 
     else: 
-        print """Are you in the umost okay condition right now? Like I mentioned before, please type "yes" OR "no". Just two simple words bruv.\n"""
+        print """Are you in the umost okay condition right now? Like I mentioned before, please type "yes" OR "no". Okay we will count to ten and then continue.\n"""
+        counttoten()
         showerscene()
 
 def eatbreakfast():
@@ -88,22 +114,8 @@ In short, Hitler is talking about the young mind of Germany. Now the fact that y
         trynum = trynum + 1
         wearsuit(trynum)
 
-def
-    answer5 = raw_input(" (yes or no) ")
-    
-    if  answe5 == "yes":
-        print " \n"
-    
-    elif answer5 == "no":
-        print """ \n"""
-        exit()
-
-    else: 
-        print """ \n"""
-        exit()
-
 def main():
+    intro()
     wakeup()
     takeshower()
-    wearsuit(0)    
 main()
