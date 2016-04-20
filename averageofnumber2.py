@@ -20,19 +20,31 @@ The interger part is {}. \n
 """.format (average, intaverage, evenorodd)
 
 def rangefind(n1, n2, n3, n4, n5):
-    if n1 < 0 or n1 > 10:
-        print "Out of range."
-        exit()
-    elif n2 < 0 or n2 > 10:
-        print "Out of range."
-        exit()
-    elif n3 < 0 or n3 > 10:
-        print "Out of range."
-        exit()
-    elif n4 < 0 or n4 > 10:
-        print "Out of range."
-        exit()
-    elif n5 < 0 or n5 > 10:
+    if n1 >= 0 and n1 < 10:
+        rangefind(n2)
+        if not:
+            print "Out of range."
+            exit()
+
+    if n2 >= 0 and n2 < 10:
+        rangefind(n3)
+        if not:
+            print "Out of range."
+            exit()
+
+    if n3 >= 0 and n3 < 10:
+        rangefind(n4)
+        if not:
+            print "Out of range."
+            exit()
+
+    if n4 >= 0 and n4 < 10:
+        rangefind(n5)
+        if not:
+            print "Out of range."
+            exit()
+
+    if not n5 >= 0 and n5 < 10:
         print "Out of range."
         exit()
 

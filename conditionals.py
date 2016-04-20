@@ -75,7 +75,7 @@ def eatbreakfast():
 
     answer3 = raw_input(" Eat breakfast? Now how about that. It really doesn't matter when you eat but eh. So...eat? (yes or no) ")
     
-    if  answe3 == "yes":
+    if  answer3 == "yes":
         print "NO. HE MUST NOT EAT AT HOME, for money management purposes. If he goes to his office, there must be be free food. You know that place where there is a small fridge and it is like a lounge.  \n" #do this 
         exit()
     
@@ -95,9 +95,11 @@ def wearsuit(trynum):
 
     if trynum == 1:
         print "TRY AGAIN YOU RETARD\n"
+        wearsuit(trynum)
 
     if trynum == 2:
         print "yoyoyoyoyo\n"
+        wearsuit(trynum)
 
     if trynum == 3:
         print """
