@@ -11,16 +11,16 @@ def countdownfrom(start, end):
         print "We made it to " + str(end) + "!"
     else:
         time.sleep(1)
-        print start - end
-        countdownfrom((start + 1), end)
+        print start - 1 #fix tihs
+        countdownfrom((start + 1), end) #fix tihs
 
 def countupfrom(start, end):
     if start == end:
         print "We made it to " + str(start) + "!"
     else:
         time.sleep(1)
-        print end - start
-        countdownfrom((start - 1), end)
+        print start + 1 #fix tihs
+        countdownfrom((start +1), end) #fix tihs
 
 def main():
     start = float(raw_input("Insert the starting number: "))
