@@ -8,7 +8,7 @@
 #'Return' returns a value. It can be used after an calculation is 
 #executed. When the python interpreter solves a math problem, you can
 #"return" the value back into the interpreter so you can see (no pun
-#intended).
+#intended). x
 
 #3) What are 2 ways indentation is important in python code?
 #a) Indentation is important because it tells specific lines of code where it belongs in a certain function.
@@ -19,13 +19,13 @@
 #
 #problem1_a) 36
 #problem1_b) square root of 3
-#problem1_c) square root of 0
+#problem1_c) square root of 0 = 0
 #problem1_d) -5
 #
 #problem2_a) True
 #problem2_b) False
-#problem2_c) True
-#problem2_d) False
+#problem2_c) False
+#problem2_d) False x
 #
 #problem3_a) 0.3
 #problem3_b) 0.5
@@ -74,3 +74,5 @@ def main():
     output(num1, num2, num3)
 
 main() #main function to execute my script
+
+#29, 31
