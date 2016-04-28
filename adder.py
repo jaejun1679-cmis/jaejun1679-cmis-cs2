@@ -5,15 +5,13 @@ def adder():
 
     value = (raw_input ("Insert a number: ")
 
-    if value == "":
-        print total
+    if value == " ":
+        print "Running total: " + str(total)
         exit()
 
     else:
         total += float(value)
-        adder()
-
-    print "Running total: " + float(total)
+        continue
 
     adder()
 
