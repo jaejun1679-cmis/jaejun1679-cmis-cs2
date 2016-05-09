@@ -4,8 +4,44 @@ import random
 import math
 import time
 
-def intro():
+def inttest():
+    def output(minnum, maxnum):
+		return """
+I'm thinking from a number from {} to {}.
+""".format(minnum, maxnum)
 
+    def result(target, guessnum, offby):
+        if target > guessnum:
+            print """
+The target was {}.
+Your guess was {}.
+That is under {} units.
+""".format(target, guessnum, offby)
+
+    	elif target == guessnum:
+        	print """
+The target was {}.
+Your guess was {}.
+Therefore you are CORRECT! ARE U A WIZARD?!
+""".format(target, guessnum, offby)
+
+    	else:
+        	print """
+The target was {}.
+Your guess was {}. 
+That is over {} units.
+""".format(target, guessnum, offby)
+
+	def main():
+   		minnum = float(raw_input("What is the minimum number?: "))
+    	maxnum = float(raw_input("What is the maximum number?: "))
+    	print output(minnum, maxnum)
+    	guessnum = float(raw_input("What do you think it is?: "))
+    	target = random.randint(minnum, maxnum)
+    	offby = abs(target - guessnum)
+    	result(target, guessnum, offby)    
+
+def intro():
 	print """
 Hello! Welcome to my conditionals assignment. Uh I mean my game about things that does things when you input things into this grey thing. 
 The objective is to help Bob get ready for work. Bob is a very busy man and must be on time. But before he goes to work, he does a lot things. He needs to wake up, take a shower, eat breakfast, wear a suit, and start his car. What a poor busy man. 
@@ -14,7 +50,7 @@ Before you begin, take account this quote:
 "Choose is to make a choice, and a choice is to choose" - JJC
 Made no sense but thy shall not judge the ones who try. 
 """
-	raw_input("Press enter to begin. \n")
+	raw_input("Press enter to begin the test. \n")
 
 def counttoten():
     time.sleep(1)
@@ -38,28 +74,31 @@ def counttoten():
     time.sleep(1)
     print 10 
 
-def inttest():
-    print """HI! Welcome to the testing center. Hopefully you've had enough sleep because this test is much more complicated than the SAT test. The answers are totally not randomly rigged to fit the 11th requirement on this list: (https://sites.google.com/a/cmis.ac.th/cs2/unit-3/conditional-execution). The "x" represents completion.
-
-Write a description of what your script will do first. This description can be written in gedit and used as the basis of your code later. See this example.
-name the file conditionals.py
-- 2 conditional execution x
-- 2 alternative execution x
-- 2 chained conditionals x
-- Use raw_input. x
-- Use good variable names. x
-- Use type conversion when necessary. x
+def inttestintro():
+	print """
+HI! Welcome to the testing center. Hopefully you've had enough sleep because this test is much more complicated than the SAT test. The answers are totally not randomly rigged to fit the 11th requirement on this list: (https://sites.google.com/a/cmis.ac.th/cs2/unit-3/conditional-execution). The "x" represents completion. """
+	raw_input("\nPress enter to view the list.")
+	print """
+Here is the list:
+- 2 conditional execution [x]
+- 2 alternative execution [x]
+- 2 chained conditionals [x]
+- Use raw_input. [x]
+- Use good variable names. [x]
+- Use type conversion when necessary. [x]
 - Define at least 4 functions that do something substantial (not just adding 2 numbers or multiplying). At least 1 must return a boolean value and be used as a part of the flow control. At      least one must return an integer or float. At least 1 must return a string. The 4th can do what ever you want. x
 - Define a main() function to organize the flow of your program. Be sure to think about the three phases (input, processing, output) x
-- Use at least 3 different relational operators. x 
-- Use each of the logical operators at least once. x
-- Use random.random() and random.randint() at least once each in your script.
-- Use str.format() at least once in your script. x
-- Use \"\"\" or \'\'\' strings at least once in your script. x
-- Write an interesting and/or entertaining story/game. x 
-- Use the same structure we learned about in the simple program assignment. x """
+- Use at least 3 different relational operators. [x] 
+- Use each of the logical operators at least once. [x]
+- Use random.random() and random.randint() at least once each in your script. [] <- (see this box is not filled)
+- Use str.format() at least once in your script. [x]
+- Use \"\"\" or \'\'\' strings at least once in your script. [x]
+- Write an interesting and/or entertaining story/game. [x] 
+- Use the same structure we learned about in the simple program assignment. [x]
 
-#add the box back
+Testing will begin shortly."""
+	time.sleep(7)
+	inttest()
 
 def wakeup():
 
@@ -164,9 +203,14 @@ def correctcase():
         correctcase()
 
 def outro():
-    print "Well it seems like we have reached the end of this real-life 100% replica of life-simulation game. That's it. I am FREEEEEE. Ah but before you and I partways, I must give you an intellectual evaulation due to the require of the conditionals assignment. Uh i mean uh to see if you should breed in the future. WAIT no uhh i mean to see you can uhhh........nvm run the quiz."
+    print "Well it seems like we have reached the end of this real-life 100% replica of life-simulation game of Bob getting ready for work. That's it. I am FREEEEEE. Thank you for playing the game. Ah but before you and I must partways, but before I must give you an intellectual evaulation due to the require of the conditionals assignment. Uh i mean uh to see if you should breed in the future. WAIT no uhh i mean to see you can uhhh........nvm run the quiz."
     inttest()
 
 def main():
-    inttest()
+    intro()
+    wakeup()
+    wearsuit(trynum=0)
+    takeshower()
+    eatbreakfast()
+    correctcase()
 main()
