@@ -4,42 +4,66 @@ import random
 import math
 import time
 
-def inttest():
-    def output(minnum, maxnum):
-		return """
-I'm thinking from a number from {} to {}.
-""".format(minnum, maxnum)
+def findint(dig1, dig2):
+    intlevel = random.randint(dig1, dig2)
 
-    def result(target, guessnum, offby):
-        if target > guessnum:
-            print """
-The target was {}.
-Your guess was {}.
-That is under {} units.
-""".format(target, guessnum, offby)
+    if intlevel == 10:
+        intlevel = "You intellegence must be on a God level."
 
-    	elif target == guessnum:
-        	print """
-The target was {}.
-Your guess was {}.
-Therefore you are CORRECT! ARE U A WIZARD?!
-""".format(target, guessnum, offby)
+    elif intlevel <= 9 and intlevel >= 8:
+        intlevel = "Hm you must be as smart as Mr. Owen."
 
-    	else:
-        	print """
-The target was {}.
-Your guess was {}. 
-That is over {} units.
-""".format(target, guessnum, offby)
+    elif intlevel <= 7 and intlevel >= 4:
+        intlevel = "Eh you could maybe pass highschool."
 
-	def main():
-   		minnum = float(raw_input("What is the minimum number?: "))
-    	maxnum = float(raw_input("What is the maximum number?: "))
-    	print output(minnum, maxnum)
-    	guessnum = float(raw_input("What do you think it is?: "))
-    	target = random.randint(minnum, maxnum)
-    	offby = abs(target - guessnum)
-    	result(target, guessnum, offby)    
+    elif intlevel <= 3 and intlevel = 0:
+        intlevel = "Is this MCho?"
+
+def intoutput():
+    print """
+That comepletes the testing. Thank you for participating
+""".format(intlevel)
+
+def testmain():
+    houseqanswer = raw_input("""You have a red house, a blue house, a green house, and a white house. The red man lives in the red house, the blue man lives in the blue house, the green man lives in the green house. Who lives in the white house?\n Answer: """)
+
+    if  houseqanswer != "President":
+        print "See you got this question wrong."
+        findint(0, 5)
+        
+    elif houseqanswer == "President":
+        print "W O W." 
+        findint (6, 10)
+
+    else: 
+        print "?"
+        findint (0, 1)
+
+def inttestintro():
+    print """
+HI! Welcome to the testing center. Hopefully you've had enough sleep because this test is much more complicated than the SAT test. You will be given a series of questions to measure the degree of your stupidity. The answers are totally not randomly rigged to fit the 11th requirement on this list: (https://sites.google.com/a/cmis.ac.th/cs2/unit-3/conditional-execution). The "x" represents completion. """
+	raw_input("\nPress enter to view the list.")
+	print """
+Here is the list:
+- 2 conditional execution [x]
+- 2 alternative execution [x]
+- 2 chained conditionals [x]
+- Use raw_input. [x]
+- Use good variable names. [x]
+- Use type conversion when necessary. [x]
+- Define at least 4 functions that do something substantial (not just adding 2 numbers or multiplying). At least 1 must return a boolean value and be used as a part of the flow control. At      least one must return an integer or float. At least 1 must return a string. The 4th can do what ever you want. x
+- Define a main() function to organize the flow of your program. Be sure to think about the three phases (input, processing, output) x
+- Use at least 3 different relational operators. [x] 
+- Use each of the logical operators at least once. [x]
+- Use random.random() and random.randint() at least once each in your script. [] <- (see this box is not filled)
+- Use str.format() at least once in your script. [x]
+- Use \"\"\" or \'\'\' strings at least once in your script. [x]
+- Write an interesting and/or entertaining story/game. [x] 
+- Use the same structure we learned about in the simple program assignment. [x]
+
+Testing will begin shortly."""
+	time.sleep(7)
+	inttest()
 
 def intro():
 	print """
@@ -74,32 +98,6 @@ def counttoten():
     time.sleep(1)
     print 10 
 
-def inttestintro():
-	print """
-HI! Welcome to the testing center. Hopefully you've had enough sleep because this test is much more complicated than the SAT test. The answers are totally not randomly rigged to fit the 11th requirement on this list: (https://sites.google.com/a/cmis.ac.th/cs2/unit-3/conditional-execution). The "x" represents completion. """
-	raw_input("\nPress enter to view the list.")
-	print """
-Here is the list:
-- 2 conditional execution [x]
-- 2 alternative execution [x]
-- 2 chained conditionals [x]
-- Use raw_input. [x]
-- Use good variable names. [x]
-- Use type conversion when necessary. [x]
-- Define at least 4 functions that do something substantial (not just adding 2 numbers or multiplying). At least 1 must return a boolean value and be used as a part of the flow control. At      least one must return an integer or float. At least 1 must return a string. The 4th can do what ever you want. x
-- Define a main() function to organize the flow of your program. Be sure to think about the three phases (input, processing, output) x
-- Use at least 3 different relational operators. [x] 
-- Use each of the logical operators at least once. [x]
-- Use random.random() and random.randint() at least once each in your script. [] <- (see this box is not filled)
-- Use str.format() at least once in your script. [x]
-- Use \"\"\" or \'\'\' strings at least once in your script. [x]
-- Write an interesting and/or entertaining story/game. [x] 
-- Use the same structure we learned about in the simple program assignment. [x]
-
-Testing will begin shortly."""
-	time.sleep(7)
-	inttest()
-
 def wakeup():
 
     answer1 = raw_input("Bob needs to go to work, but should he wake up? (yes or no) ")
@@ -121,7 +119,7 @@ def takeshower():
 
     answer2 = raw_input("Tadaaa now Bob woke up. But Bob smells very very bad. Should Bob take a shower? (yes or no) ")
     
-    if  answer2 == "yes":
+    if answer2 == "yes":
         print "\nNICE. Taking a shower is always great. You get to wash thyself whilst singing or rapping your most beloved song. And by the end of your rock concert, you are very clean.\n"
     
     elif answer2 == "no":
@@ -207,10 +205,5 @@ def outro():
     inttest()
 
 def main():
-    intro()
-    wakeup()
-    wearsuit(trynum=0)
-    takeshower()
-    eatbreakfast()
-    correctcase()
+    testmain()
 main()
