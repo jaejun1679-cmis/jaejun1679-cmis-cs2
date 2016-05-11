@@ -4,25 +4,49 @@ import random
 import math
 import time
 
-def findint(dig1, dig2):
-    intlevel = random.randint(dig1, dig2)
-
-    if intlevel == 10:
-        intlevel = "You intellegence must be on a God level."
-
-    elif intlevel <= 9 and intlevel >= 8:
-        intlevel = "Hm you must be as smart as Mr. Owen."
-
-    elif intlevel <= 7 and intlevel >= 4:
-        intlevel = "Eh you could maybe pass highschool."
-
-    elif intlevel <= 3 and intlevel = 0:
-        intlevel = "Is this MCho?"
-
-def intoutput():
+def iqoutput(iqlevel, iqword):
     print """
-That comepletes the testing. Thank you for participating
-""".format(intlevel)
+Thank you for participating. Your intellegence level is {}. {}
+""".format(iqlevel. iqword)
+
+def findint(dig1, dig2):
+
+    iqlevel = random.randint(dig1, dig2)
+
+    if iqlevel == 10:
+        iqword = "You intellegence must be on a God level."
+        time.sleep(2)
+        iqoutput(iqlevel, iqword)
+
+    elif iqlevel <= 9 and iqlevel >= 8:
+        iqword = "Hm you must be as smart as Mr. Owen."
+        time.sleep(2)
+        print "That comepletes the testing."
+        iqoutput(iqlevel, iqword)
+
+    elif iqlevel <= 6 and iqlevel >= 7:
+        iqword = "3.7? Nice."
+        time.sleep(2)
+        print "That comepletes the testing."
+        iqoutput(iqlevel, iqword)
+
+    elif iqlevel <= 5 and iqlevel >= 4:
+        iqword = "Eh you could maybe pass highschool."
+        time.sleep(2)
+        print "That comepletes the testing."
+        iqoutput(iqlevel, iqword)
+
+    elif iqlevel == 3 or iqlevel == 2:
+        iqword = "Is this MCho?"
+        time.sleep(2)
+        print "That comepletes the testing."
+        iqoutput(iqlevel, iqword)
+
+    elif iqlevel == 0 or iqlevel == 1:
+        iqword  = "so this happened"
+        time.sleep(2)
+        print "That comepletes the testing."
+        iqoutput(iqlevel, iqword)
 
 def testmain():
     houseqanswer = raw_input("""You have a red house, a blue house, a green house, and a white house. The red man lives in the red house, the blue man lives in the blue house, the green man lives in the green house. Who lives in the white house?\n Answer: """)
@@ -42,8 +66,8 @@ def testmain():
 def inttestintro():
     print """
 HI! Welcome to the testing center. Hopefully you've had enough sleep because this test is much more complicated than the SAT test. You will be given a series of questions to measure the degree of your stupidity. The answers are totally not randomly rigged to fit the 11th requirement on this list: (https://sites.google.com/a/cmis.ac.th/cs2/unit-3/conditional-execution). The "x" represents completion. """
-	raw_input("\nPress enter to view the list.")
-	print """
+    raw_input("\nPress enter to view the list.")
+    print """
 Here is the list:
 - 2 conditional execution [x]
 - 2 alternative execution [x]
@@ -62,8 +86,8 @@ Here is the list:
 - Use the same structure we learned about in the simple program assignment. [x]
 
 Testing will begin shortly."""
-	time.sleep(7)
-	inttest()
+    time.sleep(7)
+    inttest()
 
 def intro():
 	print """
