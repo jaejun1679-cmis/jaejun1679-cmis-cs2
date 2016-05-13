@@ -89,8 +89,12 @@ Testing will begin shortly."""
     inttest()
 
 def intro():
-	print """
-Hello! Welcome to my conditionals assignment. Uh I mean my game about things that does things when you input things into this grey thing. 
+	playername = raw_input("Hello! Welcome to my conditionals assignment.Please tell me your name."
+    if playername == "":                #this part does not work
+        print "No name? Huh."
+    
+    print """
+Uh I mean my game about things that does things when you input things into this grey thing. 
 The objective is to help Bob get ready for work. Bob is a very busy man and must be on time. But before he goes to work, he does a lot things. He needs to wake up, take a shower, eat breakfast, wear a suit, and start his car. What a poor busy man. 
 
 Before you begin, take account this quote: 
