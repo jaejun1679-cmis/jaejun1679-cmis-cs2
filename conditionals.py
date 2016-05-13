@@ -74,7 +74,7 @@ Here is the list:
 - Use raw_input. [x]
 - Use good variable names. [x]
 - Use type conversion when necessary. [x]
-- Define at least 4 functions that do something substantial (not just adding 2 numbers or multiplying). At least 1 must return a boolean value and be used as a part of the flow control. At      least one must return an integer or float. At least 1 must return a string. The 4th can do what ever you want. x
+- Define at least 4 functions that do something substantial (not just adding 2 numbers or multiplying). At least 1 must return a boolean value and be used as a part of the flow control. At least one must return an integer or float. At least 1 must return a string. The 4th can do what ever you want. [x]
 - Define a main() function to organize the flow of your program. Be sure to think about the three phases (input, processing, output) x
 - Use at least 3 different relational operators. [x] 
 - Use each of the logical operators at least once. [x]
@@ -89,10 +89,13 @@ Testing will begin shortly."""
     inttest()
 
 def intro():
-	playername = raw_input("Hello! Welcome to my conditionals assignment.Please tell me your name."
-    if playername == "":                #this part does not work
-        print "No name? Huh."
-    
+
+    playername = raw_input("Hello! Welcome to my conditionals assignment. Please tell me your name.")
+
+    if playername == "Nathan":
+        print "\nYou are too smart for this game."
+        exit()
+
     print """
 Uh I mean my game about things that does things when you input things into this grey thing. 
 The objective is to help Bob get ready for work. Bob is a very busy man and must be on time. But before he goes to work, he does a lot things. He needs to wake up, take a shower, eat breakfast, wear a suit, and start his car. What a poor busy man. 
@@ -101,7 +104,7 @@ Before you begin, take account this quote:
 "Choose is to make a choice, and a choice is to choose" - JJC
 Made no sense but thy shall not judge the ones who try. 
 """
-	raw_input("Press enter to begin the test. \n")
+    raw_input("Press enter to begin the test.\n")
 
 def counttoten():
     time.sleep(1)
@@ -130,17 +133,18 @@ def wakeup():
     answer1 = raw_input("Bob needs to go to work, but should he wake up? (yes or no) ")
     
     if  answer1 == "yes":
-        print "\nUgh I hate to admit it, but yes. Bob must wake up so that he can go to work.\n"
+        return True      #hello? fix this
+        print "\nUgh I hate to admit it, but yes. Bob must wake up so that he can go to work."
         time.sleep(1)
 
     elif answer1 == "no":
+        return False      #hello? fix this
         print "IKR. People should never wake up form their eternal slumber. But come on mate, Bob needs to go to work.\n"
         exit()
 
     else: 
         print """It clearly says to type "yes" or "no" you retard...\n"""
         time.sleep(1)
-        wakeup()
 
 def takeshower():
 
@@ -221,9 +225,4 @@ Well it seems like we have reached the end of this real-life 100% replica of lif
 
 def main():
     intro()
-    wakeup()
-    takeshower()
-    eatbreakfast()
-    wearsuit(trynum=0)
-    outro()
 main()
