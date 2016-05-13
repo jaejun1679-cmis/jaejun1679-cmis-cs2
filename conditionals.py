@@ -7,61 +7,60 @@ import time
 def iqoutput(iqlevel, iqword):
     print """
 Thank you for participating. Your intellegence level is {}. {}
-""".format(iqlevel. iqword)
+""".format(iqlevel, iqword)
 
 def findint(dig1, dig2):
 
     iqlevel = random.randint(dig1, dig2)
 
     if iqlevel == 10:
-        iqword = "You intellegence must be on a God level."
-        time.sleep(2)
-        iqoutput(iqlevel, iqword)
-
-    elif iqlevel <= 9 and iqlevel >= 8:
-        iqword = "Hm you must be as smart as Mr. Owen."
-        time.sleep(2)
+        iqword = "Your intellegence must be on a God level."
+        time.sleep(1.5)
         print "That comepletes the testing."
         iqoutput(iqlevel, iqword)
 
-    elif iqlevel <= 6 and iqlevel >= 7:
+    elif iqlevel <= 9 and iqlevel >= 8:
+        iqword = "Hm you must be as smart as Mr. Kieffer."
+        time.sleep(1.5)
+        print "That comepletes the testing."
+        iqoutput(iqlevel, iqword)
+
+    elif iqlevel >= 6 and iqlevel <= 7:
         iqword = "3.7? Nice."
-        time.sleep(2)
+        time.sleep(1.5)
         print "That comepletes the testing."
         iqoutput(iqlevel, iqword)
 
     elif iqlevel <= 5 and iqlevel >= 4:
         iqword = "Eh you could maybe pass highschool."
-        time.sleep(2)
+        time.sleep(1.5)
         print "That comepletes the testing."
         iqoutput(iqlevel, iqword)
 
     elif iqlevel == 3 or iqlevel == 2:
         iqword = "Is this MCho?"
-        time.sleep(2)
+        time.sleep(1.5)
         print "That comepletes the testing."
         iqoutput(iqlevel, iqword)
 
-    elif iqlevel == 0 or iqlevel == 1:
-        iqword  = "so this happened"
-        time.sleep(2)
+    elif iqlevel <= 1:
+        iqword  = "so this happened....."
+        time.sleep(1.5)
         print "That comepletes the testing."
         iqoutput(iqlevel, iqword)
 
 def testmain():
-    houseqanswer = raw_input("""You have a red house, a blue house, a green house, and a white house. The red man lives in the red house, the blue man lives in the blue house, the green man lives in the green house. Who lives in the white house?\n Answer: """)
+    time.sleep(3)
+    houseqanswer = raw_input("""\nYou have a red house, a blue house, a green house, and a white house. The red man lives in the red house, the blue man lives in the blue house, the green man lives in the green house. Who lives in the white house? (No caps are required.)\nAnswer: """)
 
-    if  houseqanswer != "President":
+    if  houseqanswer != "the president":
         print "See you got this question wrong."
         findint(0, 5)
         
-    elif houseqanswer == "President":
+    elif houseqanswer == "the president":
         print "W O W." 
         findint (6, 10)
-
-    else: 
-        print "?"
-        findint (0, 1)
+    
 
 def inttestintro():
     print """
@@ -145,6 +144,7 @@ def takeshower():
     
     if answer2 == "yes":
         print "\nNICE. Taking a shower is always great. You get to wash thyself whilst singing or rapping your most beloved song. And by the end of your rock concert, you are very clean.\n"
+        time.sleep(1)
     
     elif answer2 == "no":
         print """\nAlright you dirty person, listen up. He is stinky. I just said that "Bob is very bad smell." *translating into language a retard can understand...*"""
@@ -169,6 +169,7 @@ def eatbreakfast():
     
     elif answer3 == "no":
         print """Yas. For reasons along the line of "Be cheap in order to save money" he must not eat at home but eat the free food provided the office place he works at. Ohhh maybe he works for Google or something. (idk lel) \n"""
+        time.sleep(1)
 
     else: 
         print """ Okay now. I'm done with you incapacities to type "yes" or "no". You GPA must be below 2.5. bye. \n"""
@@ -179,7 +180,8 @@ def wearsuit(trynum=0):
     answer4 = raw_input("All if not most classy men and bussiness workers, they must (men and women; I'm not sexist) wear suits (or maybe that's just some social schema one must conform to). At hand, YOU know Bob works in an office and he is getting ready for work. So now u tell me, SHOULD he wear a suit? Hint: The answer is yes. (yes or no)\n")
 
     if answer4 == "yes":
-        print "NICE. At least you know how business men dress to work. Now Bob is wearing a suit and tie~\n"
+        print "\nNICE. At least you know how business men dress to work. Now Bob is wearing a suit and tie~\n"
+        time.sleep(1)
 
     if trynum == 1:
         print "TRY AGAIN YOU RETARD\n"
@@ -204,30 +206,20 @@ In short, Hitler is talking about the young mind of Germany. Now the fact that y
     
     elif answer4 == "no":
         print """...................okay im getting tired. lets finish this quick. like i said, he must wear a suit to work. RUN THE CODE AGAIN.\n"""
-        trynum = trynum + 1
+        trynum = trynum + 1 
         wearsuit(trynum)
 
-def correctcase():
-
-    answer5 = raw_input("Bob needs to go to work, therefore he needs his suitcase. Now, should Bob carry his suitcase to work? (yes or no) ")
-    
-    if  answer1 == "no":
-        print "Sadly, that is correct and not correct at the same time. People use Google Docs these days. O' wothyest of programs. People need suitcases yet they have Google Docs to do everything...."
-        time.sleep(2)
-
-    elif answer1 == "yes":
-        print """Hold up. I don't even know if business poeple even need suitcases anymore. HAHAHAHAH. *smoke bomb* "im outtie" \n"""
-        time.sleep(2)
-
-    else: 
-        print """k."""
-        time.sleep(2)
-        correctcase()
-
 def outro():
-    print "Well it seems like we have reached the end of this real-life 100% replica of life-simulation game of Bob getting ready for work. That's it. I am FREEEEEE. Thank you for playing the game. Ah but before you and I must partways, but before I must give you an intellectual evaulation due to the require of the conditionals assignment. Uh i mean uh to see if you should breed in the future. WAIT no uhh i mean to see you can uhhh........nvm run the quiz."
-    inttest()
+    print """AAAAAAnd Bob went to his office happily ever after.
+
+Well it seems like we have reached the end of this real-life 100% replica of life-simulation game of Bob getting ready for work. That's it. I am FREEEEEE. Thank you for playing the game. Ah but before you and I must partways, but before I must give you an intellectual evaulation due to the require of the conditionals assignment. Uh i mean uh to see if you should breed in the future. WAIT no uhh i mean to see you can uhhh........nvm run the quiz."""
+    testmain()
 
 def main():
-    testmain()
+    intro()
+    wakeup()
+    takeshower()
+    eatbreakfast()
+    wearsuit(trynum=0)
+    outro()
 main()
