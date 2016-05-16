@@ -1,8 +1,17 @@
 #The game will give the user the illusion of choice. Similar to the game by the name "The Stanley Parable", there will be a narrator which I will code. Primarily #using the raw_input function, it will ask the user to type something. If they obey, the story will continue. If they disobey, the story will change.
-#My program allow the user to control a character named "Bob". Bob is trying to go to work and it is the user's responsibility to make sure he showers, eats breakfast, wears proper clothing, and get the correct briefcase.  
+#My program allow the user to control a character named "Bob". Bob is trying to go to work and it is the user's responsibility to make sure he showers, eats breakfast, wears proper clothing, and get the correct briefcase.
+
 import random
 import math
 import time
+
+def lastquestion():
+    lastanswer = raw_input("Did you like this game? (yes or no): ")
+    if lastanswer == "no":
+        print "Please leave"
+
+def outro2():
+    print "Ok. Last bit of text, i promise. Thank you for playing my game."
 
 def iqoutput(iqlevel, iqword):
     print """
@@ -128,18 +137,19 @@ def counttoten():
     time.sleep(1)
     print 10 
 
-def wakeup():
+def yesorno():
 
-    answer1 = raw_input("Bob needs to go to work, but should he wake up? (yes or no) ")
+    answer1 = raw_input("Is it true that Bob needs to go to work? (yes or no) ")
     
     if  answer1 == "yes":
-        return True      #hello? fix this
-        print "\nUgh I hate to admit it, but yes. Bob must wake up so that he can go to work."
+        answer1 = True
+        
+        print "Yes! Tt is " + str(answer1) + ". Bob needs to go to work. Great now I know that you got 1 question right!"
         time.sleep(1)
 
     elif answer1 == "no":
-        return False      #hello? fix this
-        print "IKR. People should never wake up form their eternal slumber. But come on mate, Bob needs to go to work.\n"
+        answer1 = False
+        print "ERRRRR your answer is " + str(answer1) + ". I just said bob needs to go to work. Great now I know that you got 0 questoins right..."
         exit()
 
     else: 
@@ -225,4 +235,11 @@ Well it seems like we have reached the end of this real-life 100% replica of lif
 
 def main():
     intro()
+    yesorno()
+    takeshower()
+    eatbreakfast()
+    wearsuit(trynum=0)
+    outro()
+    lastquestion()
+    outro2()
 main()
