@@ -53,8 +53,8 @@ def adder(runningtotal=0, n=0):
     num = float(raw_input("Insert a number: "))
 
     if num == "":
-        runningtotal / n
-        print "The total average of the odd numbers is {}.".format(float(runningtotal))
+        average = runningtotal / n
+        print "The total average of the odd numbers is {}.".format(average)
 
     elif (num/2) != float(num):
         n = n+1
