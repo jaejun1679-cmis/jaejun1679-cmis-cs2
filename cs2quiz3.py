@@ -12,11 +12,10 @@
 #
 #
 # 4) How do we put data into a function call?
-#Data can be put into a function call by using the raw input function. It allows the user to put in any form of data in the form of a string.
-#
+#We can use parameters in your function call.
 # 
 # 5) How do we get data out of a function call?
-#The return function allows the program to spit out data back out. 
+#The return function allows the program to spit out data back out by using return or parameters. 
 #
 #
 
@@ -24,21 +23,21 @@
 # Read the following function definitions and function calls.
 # Then determine the values of the variables q1-q20.
 
-#a1 = 2, 2, 2, 2, 2, 2  
-#a2 = 6, 6
+#a1 = 8
+#a2 = 8
 #a3 = -1
 
 #b1 = 2
-#b2 = 1
-#b3 = 16
+#b2 = 2
+#b3 = 4
 
 #c1 = -2 
 #c2 = 4
 #c3 = 5
 
 #d1 = 6
-#d2 = 7
-#d3 =
+#d2 = 8
+#d3 = 4
 
 #Section 3: Programming
 #Write a script that asks the user to enter a series of numbers.
@@ -50,16 +49,19 @@
 
 
 def adder(runningtotal=0, n=0):
-    num = float(raw_input("Insert a number: "))
+    num = raw_input("Insert a number: ")
 
     if num == "":
         average = runningtotal / n
         print "The total average of the odd numbers is {}.".format(average)
 
-    elif (num/2) != float(num):
+    if float(num) % 2==0:
+        adder()
+
+    else:
+        num = float(num)        
         n = n+1
         runningtotal += num
-
-    adder(runningtotal)
+        adder(runningtotal, n)
         
 adder()
