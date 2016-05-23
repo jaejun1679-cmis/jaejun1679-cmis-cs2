@@ -8,7 +8,7 @@
 #
 #
 # 3) What is the first thing to consider when designing a recursive function?
-#Make sure to have a base case for the recursive function. 
+#Make sure to have a base case for the recursive function.
 #
 #
 # 4) How do we put data into a function call?
@@ -16,6 +16,8 @@
 # 
 # 5) How do we get data out of a function call?
 #The return function allows the program to spit out data back out by using return or parameters. 
+#
+#
 #
 #
 
@@ -28,16 +30,16 @@
 #a3 = -1
 
 #b1 = 2
-#b2 = 2
-#b3 = 4
+#b2 = 4         [x]
+#b3 = 4          
 
 #c1 = -2 
 #c2 = 4
-#c3 = 5
+#c3 = 45         
 
-#d1 = 6
-#d2 = 8
-#d3 = 4
+#d1 = 8         [x]
+#d2 = 6         [x]
+#d3 = 2         [x]
 
 #Section 3: Programming
 #Write a script that asks the user to enter a series of numbers.
