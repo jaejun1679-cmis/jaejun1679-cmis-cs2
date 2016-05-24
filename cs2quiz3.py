@@ -51,7 +51,7 @@
 
 
 def adder(runningtotal=0, n=0):
-    num = raw_input("Insert a number: ")
+    num = raw_input("Insert a number: ") #[x] does not have any labeling
 
     if num == "":
         average = runningtotal / n
@@ -64,6 +64,6 @@ def adder(runningtotal=0, n=0):
         num = float(num)        
         n = n+1
         runningtotal += num
-        adder(runningtotal, n)
+        adder(runningtotal, n) #[x] does not have any labeling
         
-adder()
+adder() #[x] did not use a main function
