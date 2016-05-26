@@ -7,14 +7,14 @@ def find(start, end):
         countupfrom(start, end)
 
 def countdownfrom(start, end):
-    while start > end:
-        print x 
-        start -+ end
+    while start >= end:
+        print start
+        start -= 1
 
-def countupfrom(start, end, attempt):
-    while end > end:
-        print x
-        start += end
+def countupfrom(start, end):
+    while start <= end:
+        print start
+        start += 1
 
 def main():
     start = float(raw_input("Insert the starting number: "))

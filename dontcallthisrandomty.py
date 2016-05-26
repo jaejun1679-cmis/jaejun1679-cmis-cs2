@@ -1,24 +1,23 @@
-import time
+import math
 
-def find(start, end):
-    if start > end:
-        countdownfrom(start, end)
-    elif end > start: 
-        countupfrom(start, end)
+def test(target, totalsum):
+    if target > 0:
+        while target >= 0:
+            if target % 2 != 0:
+                target += totalsum
+                return totalsum
+            target -= 1
 
-def countdownfrom(start, end):
-    while start > end:
-        print x 
-        start -+ end
-
-def countupfrom(start, end, attempt):
-    while end > end:
-        print x
-        start += end
+    elif target < 0:
+        while target <= 0:
+            if target % 2 != 0:
+                target += totalsum
+                return totalsum
+            target += 1
 
 def main():
-    start = float(raw_input("Insert the starting number: "))
-    end = float(raw_input("Insert the ending number: "))
-    find(start, end)
+    target = float(raw_input("Insert a number: "))
+    totalsum = 0
+    test(target, totalsum)
 
 main()
